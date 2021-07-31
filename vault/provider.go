@@ -248,6 +248,10 @@ var (
 			Resource:      azureAccessCredentialsDataSource(),
 			PathInventory: []string{"/azure/creds/{role}"},
 		},
+		"vault_consul_access_credentials": {
+			Resource:      consulAccessCredentialsDataSource(),
+			PathInventory: []string{"/consul/creds"},
+		},
 		"vault_generic_secret": {
 			Resource:      genericSecretDataSource(),
 			PathInventory: []string{"/secret/data/{path}"},
